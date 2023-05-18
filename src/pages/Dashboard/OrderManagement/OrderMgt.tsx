@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Table } from "antd";
 import { Modal } from "antd";
@@ -902,3 +903,4 @@ const InventoryMgt = () => {
 };
 
 export default InventoryMgt;
+
