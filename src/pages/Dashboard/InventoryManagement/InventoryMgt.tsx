@@ -87,7 +87,7 @@ const InventoryMgt = () => {
       key: "1",
       sn: "1",
       date: "1/4/2022 6:33am",
-      img: Samsung,
+      img: "Samsung",
       category: "Mobile Phones",
       brand: "Samsung",
       name: "Samsung S22 Ultra"
@@ -96,7 +96,7 @@ const InventoryMgt = () => {
       key: "2",
       sn: "2",
       date: "1/4/2022 6:33am",
-      img:Dell,
+      img:"Dell",
       category: "Laptops",
       brand: "Dell",
       name: "Dell XPS 9305"
@@ -105,7 +105,7 @@ const InventoryMgt = () => {
       key: "3",
       sn: "3",
       date: "1/4/2022 6:33am",
-      img:AppleCharger,
+      img:"Apple",
       category: "Mobile Phones Accessories",
       brand: "Apple",
       name: "Apple Phone Charger"
@@ -114,7 +114,7 @@ const InventoryMgt = () => {
       key: "4",
       sn: "4",
       date: "1/4/2022 6:33am",
-      img:LaptopCharger,
+      img:"LaptopCharger",
       category: "Laptop Accessories",
       brand: "Hp",
       name:"Hp Laptop Charger"
