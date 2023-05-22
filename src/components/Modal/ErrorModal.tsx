@@ -32,6 +32,7 @@ const ErrorModal = ({
   isOpen,
   onClose,
 }: Props) => {
+  
   const navigate = useNavigate();
 
   useEffect(() => {

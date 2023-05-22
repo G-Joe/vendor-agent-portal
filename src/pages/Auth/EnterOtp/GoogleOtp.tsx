@@ -28,7 +28,6 @@ const GoogleEnterOtp = () => {
   }
 
   return (
-  
       <div className="landing">
         <div className="right">
           <div className="form">
