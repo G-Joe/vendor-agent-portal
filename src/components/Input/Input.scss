@@ -63,7 +63,7 @@
     }
 
     input,
-    select {
+    select{
       height: 48px;
       border: 1px solid #dcd6e2;
       border-radius: 4px;
@@ -71,6 +71,8 @@
       width: 100%;
       background-color: colors.$grey_100;
       background-color: transparent !important;
+
+    
 
       &:focus {
         outline: none;
@@ -121,3 +123,10 @@ select {
   -webkit-appearance: none;
   appearance: none;
 }
+
+
+// .form-group .select select::-ms-expand{
+//   display: none;
+//   background-color: red;
+// }
+

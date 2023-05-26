@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Table } from "antd";
 import { Modal } from "antd";
 import { useNavigate } from "react-router-dom";
+import Dropdown from "components/Dropodown/Dropdown";
 import useDisclosure from "components/Modal/useDisclosure";
 import ConfirmModal from "components/Modal/ConfirmModal";
 import StatusModal from "components/Modal/StatusModal";
@@ -18,6 +19,11 @@ import "./Inventory.scss"
 
 
 const InventoryMgt = () => {
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const handleOptionSelected = (option:string) => {
+    setSelectedOption(option);
+  };
   const columns = [
     {
       title: "S/N",
@@ -151,6 +157,7 @@ const InventoryMgt = () => {
   };
   return (
     <div className="ratings">
+      
     <div className="header">
     <h3>Inventory Management</h3>
     <div className="action">
@@ -198,9 +205,11 @@ const InventoryMgt = () => {
               <br />
             </div>
             <div className="right">
-              <Select label="Product Category">
-                <option value=""></option>
-              </Select>
+             
+              <Select
+     options={["Option 1", "Option 2", "Option 3", "Option 4"]}
+     onOptionSelected={handleOptionSelected}
+     label="Product Category"/>
               <br />
               <Input label="Product Price" type="text" leftIcon={Naira} withFlag/>
               <br />

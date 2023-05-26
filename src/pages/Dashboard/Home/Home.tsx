@@ -9,8 +9,10 @@ import arrowDown from "assets/icons/arrow_down.svg";
 import "./home.scss";
 
 const Home = () => {
+  
   return (
     <>
+    
       <div className="orders">
         <OrderCard
           title="Orders Received"

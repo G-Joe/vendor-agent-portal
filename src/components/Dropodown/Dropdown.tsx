@@ -1,43 +1,7 @@
-// import { useState } from "react";
-// import "./Input.scss";
-
-// type InputProps = {
-//   label: string;
-//   children: React.ReactNode;
-//   style?: any;
-//   onChange?: any;
-//   onChangeCapture?: any;
-// };
-
-// const Select = (props: InputProps) => {
-//   const [labelStyle, setLabelStyle] = useState("#484646");
-//   const { label, children, style, onChange, onChangeCapture } = props;
-
-//   return (
-//     <div className="form-group" style={style}>
-//       <label style={{ color: labelStyle }} className="capitalize">
-//         {label}
-//       </label>
-//       <div className="input-wrapper select">
-//         <select
-//           onFocus={() => setLabelStyle("#2bd9c7")}
-//           onBlur={() => setLabelStyle("#484646")}
-//           onChange={onChange}
-//           onChangeCapture={onChangeCapture}
-//         >
-//           {children}
-//         </select>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Select;
-
 import { useState } from "react";
-import "./select.scss";
+import "./Dropdown.scss";
 
-const Select = ({ options, onOptionSelected, label }: any) => {
+const Dropdown = ({ options, onOptionSelected, label }: any) => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
   const [labelStyle, setLabelStyle] = useState("#484646");
   const [selectedOption, setSelectedOption] = useState("Select an option");
@@ -64,8 +28,7 @@ const Select = ({ options, onOptionSelected, label }: any) => {
       onFocus={() => setLabelStyle("#2bd9c7")}
     >
       <div className="select">
-        <span  >{label}</span>
-        {/* Style for span above style={{ color: labelStyle }} */}
+        <span style={{ color: labelStyle }} >{label}</span>
         <label>{selectedOption}</label>
       </div>
       {toggleDropdown && options?.length ? (
@@ -83,4 +46,4 @@ const Select = ({ options, onOptionSelected, label }: any) => {
   );
 };
 
-export default Select;
+export default Dropdown;
